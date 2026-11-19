@@ -1,0 +1,23 @@
+{
+    "name": "paperjet/laravel-sdk",
+    "description": "Drop-In mPDF & DomPDF replacement SDK for CKEditor, Dynamic Tables & Chart.js in PHP/Laravel.",
+    "keywords": ["laravel", "pdf", "mpdf", "dompdf", "ckeditor", "chartjs", "browsershot", "chromium", "paperjet"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Paperjet\\Sdk\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Paperjet\\Sdk\\PaperjetServiceProvider"
+            ],
+            "aliases": {
+                "Paperjet": "Paperjet\\Sdk\\Facades\\Paperjet"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
